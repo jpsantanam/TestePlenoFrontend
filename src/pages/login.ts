@@ -1,5 +1,18 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #01121F;
+`;
+
+export const Logo = styled.img`
+    width: 217px;
+`;
+
 export const Form = styled.form`
     width: 369px;
     top: 133px;
