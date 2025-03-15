@@ -1,17 +1,15 @@
-import { useState } from 'react'
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './pages/login.tsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-  setCount(1);
-  console.log(count);
-  return (
-    <>
-      <div>
-        <h3>Teste Frontend PL </h3>
-      </div>
-    </>
-  )
+    return (
+        <Router>
+            <Routes>
+                <Route path='/' element={<Login />} />
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;
