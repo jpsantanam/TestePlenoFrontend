@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import theme from "../../themes/default";
 
 export const Container = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-color: #01121f;
+    background-color: ${theme.colors.background.dark};
     overflow: auto;
 `;
 
@@ -33,7 +34,7 @@ export const Form = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #021a30;
+    background-color: ${theme.colors.background.light};
 
     @media (max-width: 768px) {
         width: 75%;
@@ -42,9 +43,9 @@ export const Form = styled.div`
 
 export const Title = styled.h1`
     font-family: "Inter";
-    font-weight: 700;
+    font-weight: ${theme.fonts.fontWeight.bold};
     font-size: 18px;
-    color: #f8f9fa;
+    color: ${theme.fonts.color.plain};
     line-height: 28px;
 `;
 

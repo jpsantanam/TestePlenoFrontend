@@ -1,25 +1,26 @@
 import styled from "styled-components";
+import theme from "../../themes/default";
 
 export const Header = styled.div`
-    background-color: #333;
     color: white;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem 0;
-    background-color: #01121f;
+    background-color: ${theme.colors.background.dark};
+
+    font-family: "Inter";
 `;
 
 export const Title = styled.p`
-    font-family: "Inter";
-    font-weight: 700;
+    font-weight: ${theme.fonts.fontWeight.bold};
     font-size: 18px;
-    color: #f8f9fa;
+    color: ${theme.fonts.color.plain};
     line-height: 28px;
 `;
 
 export const Headline = styled.p`
     font-family: "Inter";
-    font-weight: 400;
+    font-weight: ${theme.fonts.fontWeight.regular};
     font-size: 12px;
     line-height: 22px;
     color: #868e96;

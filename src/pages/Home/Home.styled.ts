@@ -1,27 +1,29 @@
 import styled from "styled-components";
+import theme from "../../themes/default.ts"
+
 
 export const Container = styled.div`
-    background-color: #021a30;
+    background-color: ${theme.colors.background.light};
     height: 100vh;
     witdh: 100%;
     display: flex;
     flex-direction: column;
+    
+    font-family: ${theme.fonts.fontFamily};
 `;
 
 export const Title = styled.p`
-    font-family: "Inter";
-    font-weight: 700;
-    font-size: 18px;
-    color: #f8f9fa;
-    line-height: 28px;
+    font-weight: ${theme.fonts.fontWeight.bold};
+    font-size: ${theme.fonts.fontSize.large};
+    color: ${theme.fonts.color.plain};
+    line-height: ${theme.fonts.lineHeight.large};
 `;
 
 export const Text = styled.p`
-    font-family: Inter;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ffffff;
+    font-weight: ${theme.fonts.fontWeight.regular};
+    font-size: ${theme.fonts.fontSize.medium};
+    line-height: ${theme.fonts.lineHeight.medium};
+    color: ${theme.fonts.color.white};
 `;
 
 export const Content = styled.div`

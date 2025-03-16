@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import theme from "../../themes/default";
 
 export const Button = styled.button<{ isDisabled?: boolean }>`
     width: 100%;
@@ -7,22 +8,30 @@ export const Button = styled.button<{ isDisabled?: boolean }>`
     gap: 10.15px;
     border-width: 1.22px;
     border-style: solid;
-    border-color: #8b1d07;
-    background-color: #8b1d07;
-    color: #ffffff;
+    border-color: ${theme.colors.primary.plain};
+    background-color: ${theme.colors.primary.plain};
+    color: ${theme.fonts.color.white};
     outline: none;
 
     &:focus {
         border-radius: 4px;
         border-style: solid;
-        border-color: #f8f9fa;
+        border-color: ${theme.fonts.color.plain};
         border-width: 1.22px;
+    }
+
+    &:hover {
+        background-color: ${theme.colors.primary.focus};
     }
 
     ${({ isDisabled }) =>
         isDisabled &&
         css`
             border: none;
-            background-color: #868e96;
+            background-color: ${theme.colors.grey.disabled};
+
+            &:hover {
+                background-color: ${theme.colors.grey.plain};
+            }
         `}
 `;

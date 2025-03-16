@@ -1,12 +1,12 @@
 import styled from "styled-components";
+import theme from "../../themes/default";
 
 export const Navbar = styled.nav`
-    background-color: #333;
     color: white;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem 0;
-    background-color: #01121f;
+    background-color: ${theme.colors.background.dark};
 `;
 
 export const Logo = styled.img`
@@ -14,21 +14,17 @@ export const Logo = styled.img`
 `;
 
 export const Button = styled.button`
-    background-color: #021A30;
+    background-color: ${theme.colors.background.light};
     border: none;
     border-radius: 4px;
-    color: #F8F9FA;
+    color: ${theme.fonts.color.plain};
     cursor: pointer;
     font-size: 1rem;
     padding: 0.5rem 1rem;
 
     font-family: "Inter";
-    font-weight: 700;
+    font-weight: ${theme.fonts.fontWeight.bold};
     font-size: 12px;
-
-    &:hover {
-        background-color: #5d1300;
-    }
 `;
 
 export const Content = styled.div`
