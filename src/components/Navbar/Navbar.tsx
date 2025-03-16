@@ -1,12 +1,16 @@
 import React from "react";
 import * as Styled from "./Navbar.styled.ts";
 
-export default function Navbar() {
+type NavbarProps = {
+    onClick: () => void;
+};
+
+export default function Navbar(props: NavbarProps) {
     return (
         <Styled.Navbar>
             <Styled.Content>
-            <Styled.Logo src="../../public/logo.png"></Styled.Logo>
-            <Styled.Button>Sair</Styled.Button>
+                <Styled.Logo src="../../public/logo.png"></Styled.Logo>
+                <Styled.Button onClick={props.onClick}>Sair</Styled.Button>
             </Styled.Content>
         </Styled.Navbar>
     );

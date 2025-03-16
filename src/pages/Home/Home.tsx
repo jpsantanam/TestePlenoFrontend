@@ -4,9 +4,13 @@ import Navbar from "../../components/Navbar";
 import Header from "../../components/Header";
 
 export default function Home() {
+    const handleClick = () => {
+        window.location.href = "/";
+    };
+
     return (
         <Styled.Container>
-            <Navbar />
+            <Navbar onClick={handleClick} />
             <Header />
             <Styled.Content>
                 <Styled.Title>
