@@ -30,10 +30,10 @@ export const Input = styled.input`
     color: #f8f9fa;
     padding: 0 12px;
 
-    &:focus {    
+    &:focus {
         border-radius: 4px;
         border-style: solid;
-        border-color: #F8F9FA;
+        border-color: #f8f9fa;
         border-width: 1.22px;
     }
 `;

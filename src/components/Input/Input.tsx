@@ -1,5 +1,5 @@
 import React, { HTMLInputTypeAttribute, useState } from "react";
-import * as Styled from "./Input.ts";
+import * as Styled from "./Input.styled.ts";
 import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";
